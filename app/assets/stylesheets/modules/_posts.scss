@@ -20,9 +20,9 @@
   font-family: 'VT323', monospace;
 }
 
-.left-bar {
+.leftside-bar {
   width: 15%;
-  color: greenyellow;
+  // color: greenyellow;
   background-color: black;
   background-size: 80px 80px;
   background-image:
@@ -58,20 +58,27 @@
     }
   }
 
-  table {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #0000ee;
-    tbody {
-      tr {
-        td {
+  .leftside-bar__list {
+    color: #20da05;
+    margin: auto;
+    width: 100px;
+    border-right: 1px solid #20da05;
+    border-left: 1px solid #20da05;
+    background-color: black;
+      ul {
+        .leftside__topmenu {
+          background-color: #20da05;
+          color: black;
+        }
+        li {
+          border: 1px solid #20da05;
+          padding-left: 5px;
           a {
             text-decoration: none;
+            color: #20da05;
           }
         }
       }
-    }
-
   }
 
 }
