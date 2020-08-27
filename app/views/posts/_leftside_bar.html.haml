@@ -7,11 +7,13 @@
     
     %ul.leftside-bar__menuList
       %li.leftside__menu.leftside__topmenu
-        HOME
+        = link_to edit_user_path(current_user) do
+          HOME
       %li.leftside__menu
         = link_to edit_user_path(current_user) do
           MYPAGE
       %li.leftside__menu
-        CONTACT
+        = link_to edit_user_path(current_user) do
+          SIGN IN/UP
 
       
